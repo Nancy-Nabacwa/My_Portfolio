@@ -7,26 +7,27 @@ import { motion, useInView } from "framer-motion";
 const projectsData = [
   {
     id: 1,
-    title: "React Portfolio Website",
-    description: "Project 1 description",
+    title: "Wezesha a Case Study",
+    description: "An end-to-end project built using React.js, Python, and Kotlin aimed to help farmers easily access their cooperative records and keep track of their financial transactions to build their creditworthiness.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    tag: ["All","Mobile"],
+    gitUrl: "https://github.com/akirachix/Tech-Marvels-Informational.git",
+    previewUrl: "https://appetize.io/app/b_l2p65plipuygoweb2sp3wdavey",
+    
   },
   {
     id: 2,
-    title: "Potography Portfolio Website",
-    description: "Project 2 description",
+    title: "Themis AI",
+    description: "Platform designed to support the Kenyan judicial system. It provides real-time transcription, case briefs, and case matching, enabling judges to streamline court proceedings and reduce delays",
     image: "/images/projects/2.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/akirachix/Taishi-Frontend",
+    previewUrl: "https://themis-dashboard-one.vercel.app/",
   },
   {
     id: 3,
-    title: "E-commerce Application",
-    description: "Project 3 description",
+    title: "Swahili Pal",
+    description: "SwahiliPal is designed to revolutionize the language learning experience by providing a comprehensive, interactive platform that combines structured translations with personalized vocabulary building. The app aims to create an engaging environment that fosters self-directed learning, allowing users like Kioko Kwame to take control of their educational journey.",
     image: "/images/projects/3.png",
     tag: ["All", "Web"],
     gitUrl: "/",
@@ -34,30 +35,30 @@ const projectsData = [
   },
   {
     id: 4,
-    title: "Food Ordering Application",
-    description: "Project 4 description",
+    title: "AkiraOil",
+    description: "Design Inspiration for oil and gas company",
     image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
+    tag: ["All", "Design"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 5,
-    title: "React Firebase Template",
-    description: "Authentication and CRUD operations",
+    title: "Simple Todo list",
+    description: "Boot camps can be tiring. This ia a simple to do list I made for myself to help me stay organised and ahead of my tasks life in a bootcamp.",
     image: "/images/projects/5.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Nancy-Nabacwa/my-projects.git",
+    previewUrl: "https://my-projects-green-nine.vercel.app/",
   },
   {
     id: 6,
-    title: "Full-stack Roadmap",
-    description: "Project 5 description",
+    title: "Multimedia Project",
+    description: "This is a website that documents how well I can work with different stakeholders. In this, you will find how well my team has taken time to note and write down all our multimedia projects.",
     image: "/images/projects/6.png",
     tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    gitUrl: "https://github.com/Nancy-Nabacwa/Code-Taishi.git",
+    previewUrl: "https://code-taishi-rdc3-git-main-nancy-nabacwas-projects.vercel.app/",
   },
 ];
 
@@ -96,6 +97,11 @@ const ProjectsSection = () => {
           isSelected={tag === "Web"}
         />
         <ProjectTag
+          onClick={handleTagChange}
+          name="Design"
+          isSelected={tag === "Design"}
+        />
+         <ProjectTag
           onClick={handleTagChange}
           name="Mobile"
           isSelected={tag === "Mobile"}
